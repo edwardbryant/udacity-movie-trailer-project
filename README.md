@@ -20,7 +20,28 @@ The files for the project, may be [downloaded here](https://github.com/edwardbry
 
 ## Quick Start
 
-After downloading the project files, ... need Python (2.7 used to for project)
+After downloading the project files, a movie trailer page can be created by importing [media.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py) and [fresh_tomatoes.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/fresh_tomatoes.py) at the start of your Python script. Then create idividual Movie objects by calling media.Movie() and supplying it with four arguments -- title, year, poster_url, and trailer_url. Lastly call fresh_tomatoes.open_movies_page() and supply it with an array of the movie objects you created. 
+
+```
+import media
+import fresh_tomatoes
+
+#information for object arguments
+title = "Pulp Fiction"
+year = 1994
+poster_url = "http://goo.gl/V5fb9n"
+trailer = "https://www.youtube.com/watch?v=ewlwcEBTvcg"
+
+# Create Movie object
+pulp_fiction = media.Movie(title, year, poster_url, trailer_url)
+
+# Create movie trailer page with array of one movie
+fresh_tomatoes.open_movies_page([pulp_fiction])
+
+```
+
+A more detailed example with multiple movie objects, which is used for the [demo](http://edwardbryant.github.io/udacity-movie-trailer-project/fresh_tomatoes.html), can be found in [entertainment_center.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py) 
+
 
 ### What's included
 
@@ -34,9 +55,9 @@ master.zip/
 │   └── curtains.jpg
 ├── js/
 │   └── main.js
-├── entertainment-center.py
-├── fresh-tomatoes.html
-├── fresh-tomatoes.py
+├── entertainment_center.py
+├── fresh_tomatoes.html
+├── fresh_tomatoes.py
 ├── media.py
 └── README.md
 ```
@@ -45,18 +66,7 @@ master.zip/
 
 ### Using the Movie object class
 
-The Movie object class used for the Movie Trailer Project can be used by importing [media.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py) at the start of your Python script and creating a new Movie object (see example 1).
 
-```
-import media
-
-pulp_fiction = media.Movie(
-    "Pulp Fiction",
-    1994,
-    "http://goo.gl/V5fb9n",
-    "https://www.youtube.com/watch?v=ewlwcEBTvcg")
-
-```
 
 #### movie.title
 
