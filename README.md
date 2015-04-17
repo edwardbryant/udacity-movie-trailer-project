@@ -20,7 +20,7 @@ The files for the project, may be [downloaded here](https://github.com/edwardbry
 
 ## Quick Start
 
-After downloading the project files, a movie trailer page can be created by importing [media.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py) and [fresh_tomatoes.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/fresh_tomatoes.py) at the start of your Python script. Then create idividual Movie objects by calling media.Movie() and supplying it with four arguments -- title, year, poster_url, and trailer_url. Lastly call fresh_tomatoes.open_movies_page() and supply it with an array of the movie objects you created. 
+After downloading the project files, a movie trailer page can be created by importing [media.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py) and [fresh_tomatoes.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/fresh_tomatoes.py) at the start of your Python script. Then create idividual Movie objects by calling media.Movie() and supplying it with four arguments -- title, year, poster_url, and trailer_url. Lastly, to generate the movie trailers page, call fresh_tomatoes.open_movies_page() and supply it with an array of the movie objects you created. 
 
 ```
 import media
@@ -64,17 +64,19 @@ master.zip/
 
 ## Documentation
 
-### Using the Movie object class
+### Movie object class
 
+The Movie object class consists of four class variables, a simple constructor method, and a class method for playing a Movie object's movie trailer.  
 
+#### constructor method
 
-#### movie.title
+##### movie.title
 
-#### movie.year
+##### movie.year
 
-#### movie.poster_url
+##### movie.poster_url
 
-#### movie.trailer_url
+##### movie.trailer_url
 
 
 
