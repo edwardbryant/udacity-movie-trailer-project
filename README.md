@@ -43,6 +43,29 @@ master.zip/
 
 ## Documentation
 
+### Using the Movie object class
+
+The Movie object class used for the Movie Trailer Project can be used by importing [media.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py) at the start of your Python script and creating a new Movie object (see example 1).
+
+```
+import media
+
+pulp_fiction = media.Movie(
+    "Pulp Fiction",
+    1994,
+    "http://goo.gl/V5fb9n",
+    "https://www.youtube.com/watch?v=ewlwcEBTvcg")
+
+```
+
+#### movie.title
+
+#### movie.year
+
+#### movie.poster_url
+
+#### movie.trailer_url
+
 
 
 ## Copyright and License
