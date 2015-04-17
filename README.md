@@ -27,7 +27,7 @@ After downloading the project files, ... need Python (2.7 used to for project)
 Within the download you'll find the following directories and files:
 
 ```
-movie-trailer-project/
+master.zip/
 ├── css/
 │   └── main.css
 ├── img/
@@ -37,7 +37,6 @@ movie-trailer-project/
 ├── entertainment-center.py
 ├── fresh-tomatoes.html
 ├── fresh-tomatoes.py
-├── index.html
 ├── media.py
 └── README.md
 ```
@@ -52,7 +51,7 @@ movie-trailer-project/
 
 - Additional code contributed by [Edward Bryant]() is offered under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-- Background image by [sethoscope](https://www.flickr.com/photos/sethoscope/2884743046/) used under [Creative Commons License BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en).
+- Background image by [sethoscope](https://www.flickr.com/photos/sethoscope/2884743046/) used under [Creative Coomons Attribution-NonCommercial-ShareAlike 2.0 Generic License (BY-NC-SA)](http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en).
 
 
 
