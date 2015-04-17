@@ -107,7 +107,7 @@ show_trailer can be called on any Movie class object to launch that object's mov
 
 ### Movie Trailer Page Functions 
 
-The functions used to create the final movie trailers page are located in [fresh_tomatoes.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py), along with HTML template variables used by these functions. 
+The functions used to create the final movie trailers page are located in [fresh_tomatoes.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py), along with HTML template variables used by these functions. This file must be imported to access the functions described below.
 
 #### open_movies_page function
 
@@ -123,18 +123,18 @@ To create the static movie trailers page the open_movies_page function must be c
 # Create movie trailer page with array of Movie class objects
 fresh_tomatoes.open_movies_page([movie1, movie2, movie3])
 
-# Same as above but include the optional sort order argument
+# Create page with movies sorted in reverse cronological order by year 
 fresh_tomatoes.open_movies_page([movie1, movie2, movie3], "cron-reverse")
 
 ``` 
 
 #### create_movie_tiles_content
 
-The create_movie_tiles_content function is called by the open_movies_page function. It takes the array of Movie class objects as an argument and iterates through each Movie object and applies the object's data to the portion of the HTML template for each movie.
+The create_movie_tiles_content function is called by the open_movies_page function. It takes the array of Movie class objects as an argument and iterates through each Movie object and applies the object's data to the portion of the HTML template for each movie. While iterating through each object's class variables, it extracts the YouTube id from movie.trailer_url.
 
 #### sort_movie_data
 
-The sort_movie_data function is called by the open_movies_page function
+The sort_movie_data function is called by the open_movies_page function. It takes two arguments the array of Movie class objects and the sort_option specify when open_movies_page was called (or "none" if no sort_option was provided). The function sorts the array, if needed and returns the array. 
 
 ## Copyright and License
 

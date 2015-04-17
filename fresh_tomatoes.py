@@ -70,7 +70,7 @@ movie_tile_content = '''
 </div>
 '''
 
-def open_movies_page(movies, sort_option="alpha"):
+def open_movies_page(movies, sort_option="none"):
 
     # Sort movies array by sort_option before proceeding
     movies = sort_movie_data(movies, sort_option) 
@@ -113,8 +113,9 @@ def create_movie_tiles_content(movies):
 
 
 def sort_movie_data(movies, sort_option):
-
-    if sort_option == "alpha":
+    if sort_option == "none":
+        # Do not apply a sort order
+    elif sort_option == "alpha":
         # Sort alphabetically by title
         movies.sort(key=lambda m: m.title, reverse=False)
     elif sort_option == "alpha-reverse":
@@ -127,7 +128,6 @@ def sort_movie_data(movies, sort_option):
         # Sort reverse cronologically by year
         movies.sort(key=lambda m: m.year, reverse=True)
     else:
-        # If sort_option unrecognized, fall back to alphabetical by title
-        movies.sort(key=lambda m: m.title, reverse=False)
+        # Do not apply a sort order
     return movies
 
