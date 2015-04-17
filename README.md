@@ -48,7 +48,7 @@ A more detailed example with multiple movie objects, which is used for the [demo
 Within the download you'll find the following directories and files:
 
 ```
-master.zip/
+udacity-movie-trailer-project-master.zip/
 ├── css/
 │   └── main.css
 ├── img/
