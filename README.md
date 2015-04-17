@@ -34,11 +34,23 @@ movie-trailer-project/
 │   └── curtains.jpg
 ├── js/
 │   └── main.js
+├── entertainment-center.py
 ├── fresh-tomatoes.html
-├── xxx.tmp
-└── xxx.tmp
+├── fresh-tomatoes.py
+├── media.py
+└── README.md
 ```
 
 ## Documentation
 
 ## Copyright and License
+
+- Project starter code (supplied without rights information) contributed by [Udacity](http://www.udacity.com).
+
+- Additional code contributed by [Edward Bryant]() is offered under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+- Background image by [sethoscope](https://www.flickr.com/photos/sethoscope/2884743046/) used under [Creative Commons License BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en).
+
+
+
+
