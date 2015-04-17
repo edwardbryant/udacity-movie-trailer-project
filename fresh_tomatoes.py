@@ -49,8 +49,8 @@ main_page_content = '''
 <footer class="my-hidden">
     <div class="content">
         <div class="rights">copyright &copy; 2015 Edward Bryant</div>
-        <div class="rights">licensed under <a href="" target="_blank">Creative Commons Attribution 4.0 Int'l License</a></div>
-        <div class="rights">background image by <a href="https://www.flickr.com/photos/sethoscope/2884743046/" target="_blank">sethoscope</a> (<a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC BY-NC-SA</a>)</div>
+        <div class="rights">licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
+        <div class="rights">background image by <a href="https://www.flickr.com/photos/sethoscope/2884743046/" target="_blank">sethoscope</a>, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC BY-NC-SA 2.0</a></div>
         <div>&bull; &bull; &bull;</div>
         <div class="disclaimer">All webpages appearing in this work are fictitious and for demostration purposes only. Any resemblance to real websites, living or dead, is purely coincidental.</div>
     </div>  
@@ -71,6 +71,8 @@ movie_tile_content = '''
 '''
 
 def open_movies_page(movies, sort_option="none"):
+
+    print("open_movies_page called!")
 
     # Sort movies array by sort_option before proceeding
     movies = sort_movie_data(movies, sort_option) 
