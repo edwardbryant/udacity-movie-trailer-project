@@ -2,7 +2,7 @@ import webbrowser
 import os
 import re
 
-# HTML doctype declaration and head element information for the movie trailer page
+# HTML head element information for the movie trailer page
 main_page_head = '''
 <!DOCTYPE html>
 <html lang="en">
@@ -14,11 +14,11 @@ main_page_head = '''
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
    
 </head>
 '''
@@ -107,8 +107,7 @@ def create_movie_tiles_content(movies):
             movie_title=movie.title,
             year=movie.year,
             poster_image_url=movie.poster_url,
-            trailer_youtube_id=trailer_youtube_id
-        )
+            trailer_youtube_id=trailer_youtube_id)
     return content
 
 

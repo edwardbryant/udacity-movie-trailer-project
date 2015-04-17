@@ -6,7 +6,7 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 body {
-    background: url(curtains.jpg) no-repeat center center fixed;
+    background: url('../img/curtains.jpg') no-repeat center center fixed;
     background-color: hsla(1,100%,26%,1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
