@@ -111,18 +111,24 @@ The functions used to create the final movie trailers page are located in [fresh
 
 #### open_movies_page function
 
-To create the static movie trailers page the open_movies_page function must be called and supplied with one argument -- an array of Movie class objects. The open_movies_page function calls the remaining two functions described below.
+To create the static movie trailers page the open_movies_page function must be called and supplied with one argument -- an array of Movie class objects. The open_movies_page function, in turn, calls the remaining two functions described below.
 
 ```
-# Create movie trailer page with array array of Movie class objects
+# Create movie trailer page with array of Movie class objects
 fresh_tomatoes.open_movies_page([movie1, movie2, movie3])
+
+# Create movie trailer page with array of Movie class objects and provide an optional sort order 
+fresh_tomatoes.open_movies_page([movie1, movie2, movie3], "reverse-cron")
+
 ``` 
 
 #### create_movie_tiles_content
 
-
+The create_movie_tiles_content function is called by the open_movies_page function. It takes the array of Movie class objects as an argument and iterates through each Movie object and applies the object's data to the portion of the HTML template for each movie.
 
 #### sort_movie_data
+
+The sort_movie_data function is called by the open_movies_page function
 
 ## Copyright and License
 
