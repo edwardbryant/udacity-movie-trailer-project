@@ -83,8 +83,8 @@ header h1 {
 }
 .movie-tile img {
     text-align: center;
-    width: 188px;  /* 220 */
-    height: 292px; /* 342 */
+    width: 188px;
+    height: 292px;
     border: 2px solid #fff;
     box-shadow: 3px 3px hsla(38,67%,0%,0.3);
     -webkit-transition: all 120ms ease-out;

@@ -70,15 +70,38 @@ The Movie object class consists of four class variables, a simple constructor me
 
 #### constructor method
 
+The constructor method is called when a new Movie object is created and must include four arguments -- title, year, poster_url, and trailer_url. Each of these arguments is discussed further below.
+
+```
+import media
+
+#information for object arguments
+title = "Pulp Fiction"
+year = 1994
+poster_url = "http://goo.gl/V5fb9n"
+trailer = "https://www.youtube.com/watch?v=ewlwcEBTvcg"
+
+# Create Movie object
+pulp_fiction = media.Movie(title, year, poster_url, trailer_url)
+```
+
 ##### movie.title
+
+movie.title is any string used to identify the movie object.
 
 ##### movie.year
 
+movie.year is an integer representing the year the movie was released.  
+
 ##### movie.poster_url
+
+movie.poster_url is a string containing a URL linking to an image which will be used to represent the Movie object, such as a movie poster or DVD box cover. The movie trailer page portion of this project displays these images with a width of 188px and a height of 292px. So, images with a ratio of 1:1.5 will work best. 
 
 ##### movie.trailer_url
 
+movie.trailer_url is a string containing a URL linking to the movie trailer on YouTube.com. The movie trailer page portion of the this project extracts the YouTube id from the URL, so while links to other video services are valid in the Movie class object, they will not work with the movie trailers page. 
 
+#### show
 
 ## Copyright and License
 
