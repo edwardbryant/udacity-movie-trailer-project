@@ -128,6 +128,8 @@ fresh_tomatoes.open_movies_page([movie1, movie2, movie3], "cron-reverse")
 
 ``` 
 
+The newly generated page will be placed in the same directory and named fresh_tomatoes.html. This new page relies on three files for its background image (img/curtains.jpg), CSS style settings (css/main.css), and jQuery effects (js/main.js).
+
 #### create_movie_tiles_content
 
 The create_movie_tiles_content function is called by the open_movies_page function. It takes the array of Movie class objects as an argument and iterates through each Movie object and applies the object's data to the portion of the HTML template for each movie. While iterating through each object's class variables, it extracts the YouTube id from movie.trailer_url.
