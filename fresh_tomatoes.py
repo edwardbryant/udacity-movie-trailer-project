@@ -113,21 +113,26 @@ def create_movie_tiles_content(movies):
 
 
 def sort_movie_data(movies, sort_option):
-    if sort_option == "none":
+    if sort_option == "none": 
         # Do not apply a sort order
+        return movies
     elif sort_option == "alpha":
         # Sort alphabetically by title
         movies.sort(key=lambda m: m.title, reverse=False)
+        return movies
     elif sort_option == "alpha-reverse":
         # Sort reverse alphabetically by title
         movies.sort(key=lambda m: m.title, reverse=True)
+        return movies
     elif sort_option == "cron":
         # Sort cronologically by year
         movies.sort(key=lambda m: m.year, reverse=False)
+        return movies
     elif sort_option == "cron-reverse":
         # Sort reverse cronologically by year
         movies.sort(key=lambda m: m.year, reverse=True)
+        return movies
     else:
         # Do not apply a sort order
-    return movies
+        return movies
 
