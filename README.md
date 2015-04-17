@@ -70,7 +70,7 @@ The Movie object class consists of four class variables, a simple constructor me
 
 #### constructor method
 
-The constructor method is called when a new Movie object is created and must include four arguments -- title, year, poster_url, and trailer_url. Each of these arguments is discussed further below.
+The constructor method is called when a new Movie object is created and must include four arguments -- [title](#movietitle), [year](#movieyear), [poster_url](#movieposter_url), and [trailer_url](#movietrailer_url). Each of these arguments is discussed further below.
 
 ```
 import media
