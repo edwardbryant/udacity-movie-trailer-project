@@ -111,14 +111,20 @@ The functions used to create the final movie trailers page are located in [fresh
 
 #### open_movies_page function
 
-To create the static movie trailers page the open_movies_page function must be called and supplied with one argument -- an array of Movie class objects. The open_movies_page function, in turn, calls the remaining two functions described below.
+To create the static movie trailers page the open_movies_page function must be called and supplied with one required argument (an array of Movie class objects) and one optional argument (a string specifying a sort order). If no sort order is specified or an unrecognized sort option is provided, the order the movies appear in the array will be used. Valid strings for specifying a sort order are:
+
+- "none" (no sort, default)
+- "alpha" (alphabetical by title)
+- "alpha-reverse" (reverse alphabetical by title)
+- "cron" (cronological by year)
+- "cron-reverse" (cronological by year)
 
 ```
 # Create movie trailer page with array of Movie class objects
 fresh_tomatoes.open_movies_page([movie1, movie2, movie3])
 
-# Create movie trailer page with array of Movie class objects and provide an optional sort order 
-fresh_tomatoes.open_movies_page([movie1, movie2, movie3], "reverse-cron")
+# Same as above but include the optional sort order argument
+fresh_tomatoes.open_movies_page([movie1, movie2, movie3], "cron-reverse")
 
 ``` 
 
