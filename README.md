@@ -12,7 +12,7 @@ A simple movie trailer website project for Udacity's full-stack [nanodegree prog
 
 ## Demo
 
-For a demo, check out <http://www.example.com>!
+For a demo, check out <http://edwardbryant.github.io/udacity-movie-trailer-project/fresh_tomatoes.html>!
 
 ## Download
 
@@ -37,11 +37,14 @@ movie-trailer-project/
 ├── entertainment-center.py
 ├── fresh-tomatoes.html
 ├── fresh-tomatoes.py
+├── index.html
 ├── media.py
 └── README.md
 ```
 
 ## Documentation
+
+
 
 ## Copyright and License
 
