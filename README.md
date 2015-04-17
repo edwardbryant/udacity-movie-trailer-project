@@ -40,7 +40,7 @@ fresh_tomatoes.open_movies_page([pulp_fiction])
 
 ```
 
-A more detailed example with multiple movie objects, which is used for the [demo](http://edwardbryant.github.io/udacity-movie-trailer-project/fresh_tomatoes.html), can be found in [entertainment_center.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py) 
+A more detailed example with multiple movie objects, which is used for the [demo](http://edwardbryant.github.io/udacity-movie-trailer-project/fresh_tomatoes.html), can be found in [entertainment_center.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/entertainment_center.py) 
 
 
 ### What's included
@@ -66,7 +66,7 @@ udacity-movie-trailer-project-master.zip/
 
 ### Movie object class
 
-The Movie object class consists of four class variables, a simple constructor method, and a class method for playing a Movie object's movie trailer.  
+The Movie object class consists of four class variables, a simple constructor method, and a class method for playing a Movie object's movie trailer. The code is located in [media.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py). 
 
 ##### constructor method
 
@@ -103,10 +103,26 @@ movie.trailer_url is a string containing a URL linking to the movie trailer on Y
 
 ##### show_trailer method
 
-show_trailer can be called on any Movie class object to launch that object's movie trailer in a webpage. This method is usful for testing but is not used by the script that generates the finished movie trailers page.
+show_trailer can be called on any Movie class object to launch that object's movie trailer in a webpage. This method is useful for testing but is not used by the script that generates the finished movie trailers page.
+
+### Movie Trailer Page Functions 
+
+The functions used to create the final movie trailers page are located in [fresh_tomatoes.py](https://github.com/edwardbryant/udacity-movie-trailer-project/blob/master/media.py), along with HTML template variables used by these functions. 
+
+#### open_movies_page function
+
+To create the static movie trailers page the open_movies_page function must be called and supplied with one argument -- an array of Movie class objects. The open_movies_page function calls the remaining two functions described below.
+
+```
+# Create movie trailer page with array array of Movie class objects
+fresh_tomatoes.open_movies_page([movie1, movie2, movie3])
+``` 
+
+#### create_movie_tiles_content
 
 
 
+#### sort_movie_data
 
 ## Copyright and License
 
